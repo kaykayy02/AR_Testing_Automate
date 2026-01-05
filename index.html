@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Product Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="module"
+    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+
+  <style>
+    body { margin: 0; background: #111; }
+    model-viewer { width: 100vw; height: 100vh; }
+  </style>
+</head>
+
+<body>
+
+<model-viewer
+  src="models/92622_Automate_V2.glb"
+  environment-image="hdri/studio.hdr"
+  exposure="1.1"
+  shadow-intensity="0.6"
+  camera-controls
+  auto-rotate
+  ar
+  ar-modes="webxr scene-viewer quick-look"
+>
+</model-viewer>
+
+</body>
+</html>
